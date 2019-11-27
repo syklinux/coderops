@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "SearchBar": "/components/searchBox/index",
+    "like-cmp": "/components/like/index"
+  }
+}

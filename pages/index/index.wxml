@@ -1,0 +1,1 @@
+<like-cmp like="{{true}}"  count="{{blogDATA.views}}" title="{{ blogDATA.title }}"/>

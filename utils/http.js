@@ -8,6 +8,7 @@ const tips = {
   500: '500错误，联系网站管理员'
 }
 
+
 export class HTTP{
   request(params){
      wx.request({
@@ -21,7 +22,7 @@ export class HTTP{
        success:(res) => {
         let code = res.statusCode.toString() // code 是数字，不是字符串，不能被startsWith判断
         if (code.startsWith('2')){
-          params.success(res.data)
+          params.success && params.success(res.data)
         }
         else{
           this._show_error(code)

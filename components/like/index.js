@@ -41,6 +41,12 @@ Component({
         count:count,
         like:!like
       })
+      // 自定义事件
+      let behavior = this.properties.like?'like':'cancel'
+      // 激活事件
+      this.triggerEvent('like',{
+        behavior: behavior
+      },{})
     }
 
   }

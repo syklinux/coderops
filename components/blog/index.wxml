@@ -1,0 +1,9 @@
+<!--components/blog/movie/index.wxml-->
+<view class=".blog-container">
+  <image class=".blog-img" src="{{ img }}"></image>
+
+  <!-- <import src="/towxml/entry.wxml"/> -->
+  <!-- <template is="entry" data="{{..._content}}"/> -->
+
+  <!-- <text class=".content">{{content}}</text> -->
+</view>

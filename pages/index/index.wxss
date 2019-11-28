@@ -1,63 +1,24 @@
 /**index.wxss**/
-.userinfo {
+.header{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  height: 100rpx;
   align-items: center;
+  justify-content: space-between;
+  /* border-top: 1px solid #f5f5f5; */
+  border-bottom: 1px solid #f5f5f5;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.epsoide{
+  margin-left: 20rpx;
+  margin-top: 4rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.like{
+  margin-top: 6rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.blog-detail{
+  margin-top: -100rpx;
 }
-
-.banner {
-  /* margin-top: -100px; */
-  width: 100%;
-  height: 200px;
-  background-repeat:no-repeat;
-  background-size:100% 100%;
-  -moz-background-size:100% 100%;
-  background-image:url("https://www.coderops.net/media/image/blog/2019/04/BistiBadlands_ZH-CN5428677883_1920x1080_4Dl1EYc.jpg")
-}
-.header {
-  margin-top: -100px;
-  width: 100%;
-  height: 250px;
-  background-color: #d0d0d0;
-}
-.search{
-  width: 80%;
-  margin-top: 10px;
-  margin-left: 10%;
-    position: relative;
-    min-height: 1px;
-    /* padding-right: 15px; */
-    /* padding-left: 15px; */
-  /* height: 50px; */
-}
-
-.placeholderStyle {
-  font-size: 30rpx;
-  background-color: #fff;
-}
-
-.input-group{
-    position: relative;
-    display: table;
-    border-collapse: separate;
-}
-
-.form-control {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+.blog-img {
+  width: 750rpx;
+  height: 400rpx;
 }

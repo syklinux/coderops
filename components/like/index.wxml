@@ -3,4 +3,3 @@
 <image src="{{ like?YesSrc:NoSrc }}"></image>
 <text>{{ count }}</text>
 </view>
-<view>{{ title }}</view>

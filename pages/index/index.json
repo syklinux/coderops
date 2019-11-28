@@ -1,6 +1,10 @@
 {
   "usingComponents": {
     "SearchBar": "/components/searchBox/index",
-    "like-cmp": "/components/like/index"
+    "like-cmp": "/components/like/index",
+    "blog-detail": "/components/blog/index",
+    "v-epsoide":"/components/epsoide/index",
+    "v-navi": "/components/navi/index",
+    "v-groupBlog": "/components/groupBlog/index"
   }
 }

@@ -1,0 +1,5 @@
+<!--components/allblog/index.wxml-->
+<!-- <text>components/allblog/index.wxml</text> -->
+
+<text>{{sortDATA}}</text>
+<text>shiyongkang</text>

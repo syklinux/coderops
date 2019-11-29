@@ -1,0 +1,19 @@
+<view style="width:100%">
+<v-swiper newFiveBlog="{{newfiveDATA}}"/>
+<view style="margin-top:10rpx;">
+<v-searchBar />
+</view>
+<v-list blog="{{blogDATA}}"/>
+</view>
+
+<!-- <view class="header">
+<v-epsoide class="epsoide" index="{{ blogDATA.id }}"/>
+<like-cmp class="like" bind:like="onLike" like="{{true}}"  count="{{blogDATA.views}}" title="{{ blogDATA.title }}"/>
+<text bind:tap="bindViewTap">music</text>
+</view> -->
+<!-- <image class=".blog-img" src="https://www.coderops.net/media/image/blog/2019/04/LuciolaCruciata_ZH-CN9063767400_1920x1080.jpg"></image> -->
+
+
+<!-- <blog-detail class="blog-detail" img="{{blogDATA.image}}" content="{{ blogDATA.boby }}"/> -->
+<!-- <v-navi Sort1="{{ blogSort }}" bind:sortchange="changeTabs"/> -->
+<!-- <v-groupBlog /> -->

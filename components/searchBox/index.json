@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "l-search-bar":"../lin-ui/dist/search-bar/index"
+  }
+}

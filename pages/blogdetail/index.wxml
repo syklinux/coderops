@@ -1,0 +1,7 @@
+<view class="header">
+<v-epsoide class="epsoide" index="{{ blog.id }}"/>
+<like-cmp class="like" bind:like="onLike" like="{{true}}"  count="{{blog.views}}" title="{{ blog.title }}"/>
+</view>
+<blog-detail class="blog-detail" img="{{blog.image}}" content="{{ blog.boby }}"/>
+<!-- <v-navi Sort1="{{ blogSort }}" bind:sortchange="changeTabs"/> -->
+<!-- <v-groupBlog />

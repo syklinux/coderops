@@ -1,0 +1,13 @@
+
+<swiper class="swiper" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+  <block wx:for="{{newFiveBlog}}" wx:key="{{item.id}}">
+    <navigator url="/pages/blogdetail/index?id={{item.id}}">
+    <swiper-item class="swiper-item">
+      <image class="blog-img" src="{{item.image}}"></image>
+      <view class="blog-text">{{item.title}}</view>
+    </swiper-item>
+    </navigator>
+  </block>
+
+</swiper>

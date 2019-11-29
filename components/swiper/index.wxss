@@ -1,0 +1,28 @@
+/* components/swiper/index.wxss */
+.swiper{
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  height: 350rpx;
+  align-items: center;
+  /* overflow: unset; */
+}
+.swiper-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-img {
+  width: 750rpx;
+  height: 350rpx;
+  z-index: 1;
+}
+.blog-text{
+  position: absolute;
+  z-index: 999;
+  color: white;
+  font-size: 24rpx;
+  margin-top:250rpx;
+  text-align: center;
+}

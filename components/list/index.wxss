@@ -1,0 +1,39 @@
+/* components/list/index.wxss */
+.item_content{
+  width: 90%;
+  height: 100rpx;
+  font-size: 24rpx;
+  color: #888;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item_title{
+  font-size: 30rpx;
+}
+.item_bottm{
+  display:flex; 
+  flex-direction: row; 
+  align-items: center;
+  line-height: 40rpx;
+  height:40rpx;
+}
+.item_from{
+  width: 100rpx;
+  font-size: 20rpx;
+  color: #999;
+  float: right;
+}
+.item_time{
+  width: 230rpx;
+  font-size: 20rpx;
+  color: #999;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  justify-items: right;
+  overflow: hidden;
+  float: right;
+}
+.hover-class{
+  background-color: #A4D3EE;
+}

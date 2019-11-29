@@ -1,4 +1,0 @@
-<!--pages/hello/hello.wxml-->
-<view wx:for="{{ blog }}">
-  {{ item.title }}
-</view>

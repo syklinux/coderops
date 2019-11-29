@@ -1,9 +1,0 @@
-<!--components/navi/index.wxml-->
-  <l-tabs bind:linchange="changeTabs" equal-width="false" scrollable="true" active-key="{{0}}" >
-  <l-tabpanel tab="ALL" key="0" slot="0">
-      <!-- <view class="tab-content">ALL</view> -->
-    </l-tabpanel>
-    <l-tabpanel class="sort" wx:for="{{Sort1}}" wx:key="{{item.id}}" tab="{{item.name}}" key="{{item.id}}" slot="{{item.id}}">
-      <!-- <v-groupBlog id="{{item.id}}" /> -->
-    </l-tabpanel>
-  </l-tabs>

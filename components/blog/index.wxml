@@ -1,5 +1,19 @@
 <!--components/blog/movie/index.wxml-->
-<view class=".blog-container">
-  <image class=".blog-img" src="{{ img }}"></image>
-  <text class=".content">{{content}}</text>
+
+<view class="blog-container">
+  <view class="blog-title-container">
+    <view class="blog-title">{{title}}</view>
+  </view>
+  <view class="blog-border">
+    <!-- <view class="iconfont icon-nav-no">{{id}}</view> -->
+    <view class="iconfont icon-nav-user">{{user}}</view>
+    <view class="iconfont icon-nav-list">{{sort}}</view>
+    <view class="iconfont icon-nav-view">{{views}}</view>
+    <view class="iconfont icon-nav-time">{{_time}}</view>
+  </view>
+
+  <view style="margin-top:48rpx">
+    <image class="blog-img" src="{{ img }}"></image>
+    <v-wemark md="{{content}}" link highlight type="wemark"></v-wemark>
+  </view>
 </view>

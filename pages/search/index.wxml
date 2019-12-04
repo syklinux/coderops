@@ -1,0 +1,24 @@
+<!--pages/search/index.wxml-->
+<view class="search-container">
+  <image class="search-image" src="{{img}}"></image>
+  <text class="search-text">{{ title }}</text>
+</view>
+
+
+<v-list blog="{{searchData}}"/>
+
+
+
+<!-- 上滑加载更多 -->
+<!-- <view wx:if="{{searchData.length>0}}"> -->
+<view wx:if='{{!isRefreshing}}' class="weui-loadmore">
+  <view wx:if='{{hasMoreData}}'>
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore-tips">正在加载更多...</view>
+  </view> 
+  <view wx:else>
+    <view class="weui-loadmore-tips">没有更多内容啦</view>
+  </view>
+</view>
+<!-- </view> -->
+<v-bottom />

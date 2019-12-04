@@ -1,0 +1,21 @@
+<!--pages/sortdetail.wxml-->
+
+<view class="sort-container">
+  <image class="sort-image" src="{{img}}"></image>
+  <text class="sort-text">{{ sortDetail.name }}</text>
+</view>
+
+<v-list blog="{{sortData}}"/>
+
+<!-- 上滑加载更多 -->
+<view wx:if='{{!isRefreshing}}' class="weui-loadmore">
+  <view wx:if='{{hasMoreData}}'>
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore-tips">正在加载更多...</view>
+  </view> 
+  <view wx:else>
+    <view class="weui-loadmore-tips">没有更多内容啦</view>
+  </view>
+</view>
+
+<v-bottom />

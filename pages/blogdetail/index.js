@@ -20,18 +20,16 @@ Page({
    */
   onLoad: function (options) {
     let id = options.id
-    let that = this
-    blogmodel.getBlog(id,(res) =>{
-      that.setData({
-        blog:res
+    blogmodel.getBlog(id)
+      .then(res => {
+        this.setData({ blog: res })
       })
-    })
   },
 
-  onLike: function (event) {
-    let behavior = event.detail.behavior
-    likemodle.like(behavior, this.data.blogDATA.id)
-  },
+  // onLike: function (event) {
+  //   let behavior = event.detail.behavior
+  //   likemodle.like(behavior, this.data.blogDATA.id)
+  // },
   
   /**
    * 生命周期函数--监听页面显示

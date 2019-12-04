@@ -1,0 +1,15 @@
+/* components/my-bottom/index.wxss */
+
+.my-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150rpx;
+  line-height: 150rpx;
+  margin-bottom: 100rpx;
+}
+
+.my-text{
+  font-size: 24rpx;
+  font: bold;
+}

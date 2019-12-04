@@ -1,51 +1,38 @@
-import {HTTP} from '../utils/http.js'
+import {HTTP} from '../utils/http-p.js'
 
 export class BlogModel extends HTTP{
-  getBlog(id,sCallback){
-    this.request({
-      url: '/api/Blog/' + id,
-      method: 'GET',
-      success: (res) => {
-        sCallback(res)
-      }
-    })
-  }
-  getAllBlog(page,sCallback) {
-    this.request({
-      url: '/api/Blog/?page=' + page,
-      method: 'GET',
-      success: (res) => {
-        sCallback(res)
-      }
-    })
-  }
-  getAllSort(sCallback){
-    this.request({
-      url: '/api/Sort/',
-      method: 'GET',
-      success: (res) => {
-        sCallback(res)
-      }
-    })
-  }
-  getSortBlog(page,id,sCallback) {
-    this.request({
-      url: '/api/Blog/?page=' + page + '&sort=' + id,
-      method: 'GET',
-      success: (res) => {
-        sCallback(res)
-      }
-    })
+  getAllBlog(page){
+    let _url = '/api/Blog/?page=' + page
+    return this.request(_url)
   }
 
-  getNewFiveBlog(sCallback) {
-    this.request({
-      url: '/api/FiveBlog/',
-      method: 'GET',
-      success: (res) => {
-        sCallback(res)
-      }
-    })
+  getBlog(id) {
+    let _url =  '/api/Blog/' + id
+    return this.request(_url)
   }
 
+  getNewFiveBlog() {
+    let _url = '/api/FiveBlog'
+    return this.request(_url)
+  }
+
+  getAllSort() {
+    let _url = '/api/Sort'
+    return this.request(_url)
+  }
+
+  getSort(id,page) {
+    let _url = '/api/Blog/?sort=' + id + '&page=' + page
+    return this.request(_url)
+  }
+
+  getsortdetail(id){
+    let _url = '/api/Sort/' + id
+    return this.request(_url)
+  }
+
+  getSearch(search,page){
+    let _url = '/api/Blog/?search=' + search + '&page=' + page
+    return this.request(_url)
+  }
 }

@@ -1,7 +1,9 @@
 {
   "usingComponents": {
-    "v-searchBar": "/components/searchBox/index",
-    "v-swiper": "/components/swiper/index",
-    "v-list":"/components/list/index"
-  }
+    "v-searchBar": "../components/searchBox/index",
+    "v-swiper": "../components/swiper/index",
+    "v-list":"../components/list/index",
+    "v-bottom": "../components/my-bottom/index"
+  },
+  "enablePullDownRefresh": true
 }

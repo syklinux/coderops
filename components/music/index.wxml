@@ -1,6 +1,0 @@
-<!--components/music/index.wxml-->
-<view>
-  <image src="{{ img }}"></image>
-  <image src="{{playSrc}}"></image>
-  <text>{{content}}</text>
-</view>

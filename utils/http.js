@@ -8,7 +8,6 @@ const tips = {
   500: '500错误，联系网站管理员'
 }
 
-
 export class HTTP{
   request(params){
      wx.request({

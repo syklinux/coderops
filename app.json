@@ -1,14 +1,35 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/blogdetail/index"    
+    "pages/blogdetail/index",
+    "pages/sort/index",
+    "pages/sortdetail/index",
+    "pages/search/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "CoderOps",
+    "navigationBarTitleText": "静心",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json",
-  "networktimeout": "2s"
+  "tabBar": {
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "/image/tab/classic.png",
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "/image/tab/classic@highlight.png"
+      },
+      {
+        "text": "分类",
+        "iconPath": "/image/tab/my.png",
+        "pagePath": "pages/sort/index",
+        "selectedIconPath": "/image/tab/my@highlight.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

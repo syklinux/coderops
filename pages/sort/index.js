@@ -1,23 +1,29 @@
-// pages/sort/index.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
+//index.js
+//获取应用实例
 
-  },
+import { BlogModel } from '../../models/blog.js'
 
-  /**
-   * 组件的初始数据
-   */
+var blogmodel = new BlogModel()
+
+Page({
   data: {
-
+    sort:''
   },
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {
+  onLoad: function () {
+    blogmodel.getAllSort()
+    .then( res =>{
+      this.setData({
+        sort:res
+      })
+    })
+  },
 
+  sortview:function(e){
+    var index = parseInt(e.currentTarget.dataset.bindex)
+    wx.navigateTo({
+      url: '/pages/sortdetail/index?id=' + index,
+    })
   }
+
 })

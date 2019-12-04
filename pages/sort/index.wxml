@@ -1,2 +1,10 @@
 <!--pages/sort/index.wxml-->
-<text>pages/sort/index.wxml</text>
+
+<view class="section">
+  <view class="tui-table-view">
+    <view wx:for="{{sort}}" wx:key="{{item.id}}" wx:for-index="bindex" data-bindex='{{item.id}}' class="tui-col-3" bindtap="sortview">
+      <view class="iconfont icon-biaoqian"></view>
+      <view >{{item.name}}</view>
+    </view>
+  </view>
+</view>

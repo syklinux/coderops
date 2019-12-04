@@ -1,1 +1,41 @@
 /* pages/sort/index.wxss */
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1542824 */
+  src: url('//at.alicdn.com/t/font_1542824_t5uqhn5pkvm.eot');
+  src: url('//at.alicdn.com/t/font_1542824_t5uqhn5pkvm.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1542824_t5uqhn5pkvm.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1542824_t5uqhn5pkvm.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1542824_t5uqhn5pkvm.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1542824_t5uqhn5pkvm.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 50rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-biaoqian:before {
+  content: "\e671";
+}
+
+
+.tui-table-view{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tui-col-3{
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  text-align: center;
+  /* color: #797979; */
+  padding: 40rpx 0;
+  font-size: 30rpx;
+}

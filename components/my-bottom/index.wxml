@@ -1,0 +1,5 @@
+<!--components/my-bottom/index.wxml-->
+
+<view class="my-bottom">
+  <text class="my-text">@2019 静心 www.coderops.net</text>
+</view>

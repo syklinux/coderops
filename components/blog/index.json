@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-   
+    "v-wemark": "../wemark/wemark",
+    "l-icon": "../../lin-ui/dist/icon/index"
   }
 }

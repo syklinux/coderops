@@ -1,4 +1,27 @@
-/**index.wxss**/
+/* pages/sortdetail.wxss */
+
+.sort-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 350rpx;
+  align-items: center;
+}
+.sort-image{
+  width: 750rpx;
+  height: 350rpx;
+  z-index: 1;
+}
+.sort-text{
+  position: absolute;
+  z-index: 999;
+  color:black;
+  font-size: 30rpx;
+  margin-top:140rpx;
+  max-width: 190rpx;
+  text-align: center;
+}
+
 .weui-loadmore {
   width: 100%;
   height: 100rpx;

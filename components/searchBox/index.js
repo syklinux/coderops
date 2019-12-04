@@ -17,7 +17,9 @@ Component({
     //搜索框右侧按钮事件
     addhandle(res){
       let search = res.detail
-      console.log(search)
+      this.triggerEvent('search', {
+        behavior: search
+      }, {})
     }
   }
 })
